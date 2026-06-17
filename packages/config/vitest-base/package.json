@@ -1,20 +1,17 @@
 {
-  "name": "@collab-docs/kb",
+  "name": "@collab-docs/vitest-base",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "test": "vitest run"
+  "exports": {
+    "./base": "./base.ts",
+    "./setup": "./setup.ts"
   },
   "devDependencies": {
-    "@collab-docs/tsconfig-base": "workspace:*",
-    "@collab-docs/vitest-base": "workspace:*",
+    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.2",
-    "@vitest/coverage-v8": "^4.1.9",
-    "jsdom": "^29.1.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "vitest": "^4.1.9"
