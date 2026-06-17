@@ -1,6 +1,12 @@
 {
   "permissions": {
-    "allow": ["Bash(pnpm *)", "Bash(git diff:*)", "Bash(git status:*)", "Bash(git log:*)"],
+    "allow": [
+      "Bash(pnpm *)",
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(npm view:*)"
+    ],
     "deny": ["Bash(rm -rf *)", "Bash(git push --force*)"]
   }
 }
