@@ -32,3 +32,9 @@ context from scratch by guessing.
   sequential number.
 - `/scaffold-package` — creates the scaffold for a new package in `packages/` following
   `packages/config` conventions.
+
+## skills.sh
+
+Stack-specific skills worth installing from the [skills.sh](https://www.skills.sh)
+marketplace (Cloudflare Workers/D1/Durable Objects, Drizzle, Next.js, security,
+testing) — see [recommended-skills.md](recommended-skills.md).
