@@ -5,7 +5,17 @@
       "Bash(git diff:*)",
       "Bash(git status:*)",
       "Bash(git log:*)",
-      "Bash(npm view:*)"
+      "Bash(npm view:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(pwd:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(which:*)",
+      "Bash(file:*)",
+      "Bash(du:*)",
+      "Bash(df:*)"
     ],
     "deny": ["Bash(rm -rf *)", "Bash(git push --force*)"]
   }
