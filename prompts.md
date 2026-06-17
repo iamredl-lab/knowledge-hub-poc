@@ -1,0 +1,7 @@
+- Put together a list of recommended skills worth installing from the skills.sh marketplace given the specifics of the project --> add it to the repository instructions
+- how do I set up skills here via skills.sh so they're available for Claude Code, Copilot CLI, and Cursor?
+- do they need to be wrapped in an agent package manager?
+- Need to build a skill or set of skills for planning architecture, tasks, etc., that will run subagents on Claude, ChatGPT, Gemini and then merge the solution together.
+- set up linting with oxlint
+- set up unit tests
+- set up TypeScript

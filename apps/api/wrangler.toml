@@ -1,0 +1,20 @@
+name = "collab-docs-api"
+main = "src/index.ts"
+compatibility_date = "2026-06-17"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "collab-docs-db"
+database_id = ""
+
+[[durable_objects.bindings]]
+name = "DOC_ROOM"
+class_name = "DocRoom"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = ""
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DocRoom"]

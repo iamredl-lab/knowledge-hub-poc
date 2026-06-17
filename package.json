@@ -1,0 +1,17 @@
+{
+  "name": "knowledge-hub-poc",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Collaborative Docs POC — KB-ядро экосистемы Uni.Verse",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  }
+}

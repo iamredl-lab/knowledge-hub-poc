@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.next/
+.wrangler/
+.turbo/
+coverage/
+.env
+.env.*
+*.log
+.DS_Store
+.claude/settings.local.json
