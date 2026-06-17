@@ -5,7 +5,7 @@ compatibility_date = "2026-06-17"
 [[d1_databases]]
 binding = "DB"
 database_name = "collab-docs-db"
-database_id = ""
+database_id = "local"
 
 [[durable_objects.bindings]]
 name = "DOC_ROOM"
@@ -13,7 +13,7 @@ class_name = "DocRoom"
 
 [[kv_namespaces]]
 binding = "CACHE"
-id = ""
+id = "local"
 
 [[migrations]]
 tag = "v1"

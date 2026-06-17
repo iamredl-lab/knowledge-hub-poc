@@ -1,5 +1,11 @@
 {
   "name": "@collab-docs/api",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.16.16",
+    "@cloudflare/workers-types": "^4.20260617.1",
+    "@collab-docs/tsconfig-base": "workspace:*",
+    "vitest": "^4.1.9"
+  }
 }
