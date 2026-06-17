@@ -1,0 +1,64 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise"],
+  "env": {
+    "builtin": true
+  },
+  "rules": {
+    "unicorn/filename-case": "off"
+  },
+  "ignorePatterns": ["dist/**", ".next/**", ".wrangler/**", "node_modules/**", "coverage/**"],
+  "overrides": [
+    {
+      "files": ["apps/kb/**", "apps/editor/**", "packages/ui/**", "packages/mdx-engine/**"],
+      "plugins": [
+        "eslint",
+        "typescript",
+        "unicorn",
+        "oxc",
+        "import",
+        "promise",
+        "react",
+        "jsx-a11y",
+        "react-perf"
+      ],
+      "env": { "browser": true },
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react-perf/jsx-no-new-object-as-prop": ["warn", { "nativeAllowList": "all" }],
+        "react-perf/jsx-no-new-array-as-prop": ["warn", { "nativeAllowList": "all" }],
+        "react-perf/jsx-no-new-function-as-prop": ["warn", { "nativeAllowList": "all" }]
+      }
+    },
+    {
+      "files": ["apps/kb/**"],
+      "plugins": [
+        "eslint",
+        "typescript",
+        "unicorn",
+        "oxc",
+        "import",
+        "promise",
+        "react",
+        "jsx-a11y",
+        "react-perf",
+        "nextjs"
+      ]
+    },
+    {
+      "files": ["apps/api/**", "packages/db/**"],
+      "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise", "node"],
+      "env": { "worker": true }
+    },
+    {
+      "files": ["**/*.test.*", "**/*.spec.*", "**/test/**", "**/tests/**"],
+      "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise", "vitest"],
+      "env": { "vitest": true }
+    }
+  ]
+}

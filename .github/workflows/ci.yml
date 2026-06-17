@@ -20,7 +20,9 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm -r lint
+      - run: pnpm fmt:check
+
+      - run: pnpm lint
 
       - run: pnpm -r typecheck
 
