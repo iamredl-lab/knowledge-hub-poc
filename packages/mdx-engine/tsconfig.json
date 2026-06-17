@@ -1,0 +1,6 @@
+{
+  "extends": "../config/tsconfig-base/base.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  }
+}

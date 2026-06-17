@@ -1,5 +1,17 @@
 {
   "name": "@collab-docs/mdx-engine",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "isomorphic-dompurify": "^3.17.0"
+  },
+  "devDependencies": {
+    "@collab-docs/tsconfig-base": "workspace:*",
+    "@collab-docs/vitest-base": "workspace:*",
+    "@vitest/coverage-v8": "^4.1.9",
+    "vitest": "^4.1.9"
+  }
 }
